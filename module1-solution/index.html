@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+  <!-- I chose to use a CDN version of the Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Coursera AngularJS Assignment 1</h1>
+  <div class="container" ng-controller="LunchCheckController as lunchcheckcontroller">
+    <label>Please enter the items you ate for lunch as a comma-separated list:
+    <input type="text" placeholder="Enter lunch items here" ng-model="newLunchItems" ></label>
+    <button type="submit" class="btn btn-success" ng-click="processLunchItems()">Check If Too Much</button>
+    <p class="alert alert-info"><strong>{{outputMessage}}</strong></p>
+  </div>
+  <script src='angular.min.js'></script>
+  <script src="app.js"></script>
+</body>
+</html>
