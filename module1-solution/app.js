@@ -5,6 +5,7 @@
 
     LunchCheckController.$inject = ['$scope'];
     function LunchCheckController ($scope) {
+      $scope.outputMessage = "";
       $scope.processLunchItems = function () {
     //make a copy of the value passed in on the scope
         var inputLunchItems = $scope.newLunchItems;
