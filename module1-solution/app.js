@@ -11,7 +11,7 @@
         var inputLunchItems = $scope.newLunchItems.trim();
     //check for the nothing entered case, ie the string is undefined.
     //if so, assign a warning message to the appropriate scope variable and return
-        if (inputLunchItems === undefined) {
+        if ((inputLunchItems === undefined) || (inputLunchItems.length === 0)) {
           $scope.outputMessage = "Please Enter Data First!";
           return;
         }
