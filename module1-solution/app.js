@@ -8,7 +8,7 @@
       $scope.outputMessage = "";
       $scope.processLunchItems = function () {
     //make a copy of the value passed in on the scope
-        var inputLunchItems = $scope.newLunchItems;
+        var inputLunchItems = $scope.newLunchItems.trim();
     //check for the nothing entered case, ie the string is undefined.
     //if so, assign a warning message to the appropriate scope variable and return
         if (inputLunchItems === undefined) {
